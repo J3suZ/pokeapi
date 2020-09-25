@@ -71,6 +71,10 @@ input:focus {
   border: 1px solid rgb(0, 174, 255);
 }
 
+.form__edad.error{
+  border: 1px solid red;
+}
+
 /* .form__wrap-foto {
   width: 300px;
   height: 300px;

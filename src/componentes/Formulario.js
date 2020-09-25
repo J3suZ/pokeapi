@@ -24,6 +24,7 @@ function Formulario() {
       <input type="text" placeholder="Usuario" id="nombre" />
       <input type="text" placeholder="Pokemon favorito" id="pokemon" />
       <input
+        className="form__edad"
         type="number"
         placeholder="Ingresa tu edad"
         id="edad"
@@ -38,24 +39,24 @@ function Formulario() {
   );
 }
 
-/* const desplegarFormluario = ()=>{
-  document.querySelector(".container-form").classList.add("active")
-  document.querySelector(".form").classList.add("active")
-} */
-
 const recogerDatos = () => {
   let imagen = document.getElementById("foto").value;
   let nombre = document.getElementById("nombre").value;
   let pokemonFav = document.getElementById("pokemon").value;
   let edad = document.getElementById("edad").value;
   let elemento = document.getElementById("elemento").value;
-  /* document.getElementById("subImg").innerHTML = imagen; */
-  document.getElementById("subName").innerHTML = nombre;
-  document.getElementById("subPoke").innerHTML = pokemonFav;
-  document.getElementById("subEdad").innerHTML = edad;
-  document.getElementById("subElemen").innerHTML = elemento;
-  document.querySelector(".container-form").classList.add("active")
-  document.querySelector(".form").classList.add("active")
+  if (edad < 18) {
+    document.querySelector(".form__edad").classList.add("error");
+  } else {
+    document.querySelector(".form__edad").classList.remove("error");
+    /* document.getElementById("subImg").innerHTML = imagen; */
+    document.getElementById("subName").innerHTML = nombre;
+    document.getElementById("subPoke").innerHTML = pokemonFav;
+    document.getElementById("subEdad").innerHTML = edad;
+    document.getElementById("subElemen").innerHTML = elemento;
+    document.querySelector(".container-form").classList.add("active");
+    document.querySelector(".form").classList.add("active");
+  }
 };
 
 export default ContainerForm;

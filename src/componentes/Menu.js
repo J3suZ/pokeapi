@@ -2,13 +2,13 @@ import React from "react";
 /* import InformacionLista from "./Infolista"; */
 import List from "./List";
 import "../styles/Menu.css";
-import imagen from "./Formulario"
+import imagen from "./Formulario";
 
 const Menu = () => {
   return (
     <nav className="menu">
-      <img alt="foto de perfil" src={imagen}/>
-      {/* <Imagen img={imagen}/> */}
+      {/* <img alt="foto de perfil" src={imagen}/> */}
+      {<Imagen img={imagen}/>}
       <button className="menu__btn" onClick={accionarMenu}>
         <h2>+</h2>
       </button>
@@ -26,17 +26,15 @@ const Menu = () => {
   );
 };
 
-
-  /* <InformacionLista info="" /> */
-
+/* <InformacionLista info="" /> */
 
 function accionarMenu() {
   document.querySelector(".menu").classList.toggle("active");
   document.querySelector(".menu__btn h2").classList.toggle("active");
 }
 
-/* function Imagen(props) {
-  return <div className="menu__img">{<img alt="foto" src={props.img}/>}</div>;
-} */
+function Imagen(props) {
+  return <div className="menu__img">{<img alt="foto" src={props.img} />}</div>;
+}
 
 export default Menu;
