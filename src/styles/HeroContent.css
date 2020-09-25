@@ -1,0 +1,15 @@
+.hero__content{
+    height: calc(100% - 75px);
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    align-content: space-around;
+    padding: 20px;
+}
+
+@media screen and (max-width:500px){
+    .hero__content{
+        padding-top: 120px;
+        overflow: auto;
+    }
+}

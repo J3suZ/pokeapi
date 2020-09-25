@@ -1,0 +1,21 @@
+.container__buscardor{
+    height: 250px;
+    background: url("https://assets.pokemon.com//assets/cms2-es-es/img/misc/virtual-backgrounds/go/pokemon-party.jpg") center/cover no-repeat;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container__title{
+    color: #ffffff;
+    position: relative;
+    z-index: 111;
+}
+
+.container__input{
+    width: 800px;
+    min-width: 320px;
+    box-shadow: 0 0 100px 1000px rgba(0, 0, 0, 0.815);
+}

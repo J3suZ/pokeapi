@@ -1,0 +1,98 @@
+.menu {
+  width: 295px;
+  height: 100vh;
+  background: #2c3e50;
+  padding: 10px;
+  box-shadow: 5px 0 5px #0003;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transform: translate(100%);
+  transition: transform 0.25s ease-in;
+  z-index: 110;
+  color:#ffffff;
+}
+
+.menu.active {
+  transform: translate(0);
+}
+
+.menu__subList{
+  color: #f9f9f9;
+}
+
+.menu__img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 1px solid #0004;
+  margin: 10px auto;
+  overflow: hidden;
+  box-shadow: 0 0 10px #0003 inset;
+}
+
+.menu__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu__btn {
+  width: 25px;
+  height: 25px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 4px 0 5px #0003;
+  border: none;
+  position: absolute;
+  top: 20%;
+  left:-8%;
+  background: #2c3e50;
+  cursor: pointer;
+  font-weight: bolder;
+  outline: none;
+  z-index: 111;
+  transform: rotate(180deg);
+}
+
+.menu__btn h2 {
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+  transition: transform 0.25s ease-in;
+  transform: rotate(0deg);
+}
+
+.menu__btn h2.active {
+  transform: rotate(45deg);
+}
+
+.menu__btn:hover {
+  background: #3b5166;
+}
+
+.menu .menu__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40%;
+  flex-flow: column nowrap;
+}
+
+.menu .menu__list .menu__list-item {
+  cursor: pointer;
+  font-weight: bolder;
+}
+
+.menu__info {
+  text-transform: lowercase;
+  margin: 0;
+  padding: 0;
+}
+
+/* colores que puedo usar */
+
+/*
+  #f39c12
+  #f1c40f
+*/

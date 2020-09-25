@@ -1,0 +1,13 @@
+.hero__card{
+    max-width: 500px;
+    min-width: 200px;
+    height: 300px;
+    border: 1px solid #0002;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.hero__card img{
+    width: 200px;
+    height: 200px;
+}
